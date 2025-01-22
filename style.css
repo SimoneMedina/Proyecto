@@ -1,0 +1,66 @@
+body {
+    background-color: aquamarine;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea, button {
+    font-family: inherit;
+}
+
+a:visited, a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.dataForm {
+    width: 50%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+#loginForm {
+    max-width: 400px;
+    min-width: 275px;
+}
+
+#registerForm {
+    max-width: 500px;
+    min-width: 350px;
+}
+
+.dataForm h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.dataForm p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dataInput {
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.dataButton {
+    background-color: aquamarine;
+    border: 1px solid gray;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.dataButton:hover {
+    background-color: rgb(32, 255, 180);
+}
