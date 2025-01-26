@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/services.css">
+</head>
+<body>
+  <div id="searchBar" class="info">
+    <input type="text" placeholder="Buscar" id="searchInput" class="dataInput">
+    <input type="date" name="fechaInicio" id="fechaInicio" class="dataInput">
+    <input type="date" name="fechaFin" id="fechaFin" class="dataInput">
+    <button id="searchBtn"><img src="#" alt="Buscar"></button>
+  </div>
+  <hr>
+  <div class="info">
+    <h3>Transacciones</h3>
+    <table id="transactionsTable">
+      <tr>
+        <th>ID Transacción</th>
+        <th>Fecha</th>
+        <th>Destinatario</th>  <!-- ID del Destinatario -->
+        <th>No. Cuenta Usada</th>
+        <th>Monto</th>
+        <th>Saldo Actual</th>
+      </tr>
+      <tr>
+        <td><p>T001</p></td>
+        <td><p>2025/01/25</p></td>
+        <td><p>U002</p></td>
+        <td><p>123456789</p></td>
+        <td><p>$100.00</p></td>
+        <td><p>+ $500.00</p></td>
+      </tr>
+      <tr>
+        <td><p>T001</p></td>
+        <td><p>2025/01/25</p></td>
+        <td><p>U002</p></td>
+        <td><p>123456789</p></td>
+        <td><p>$100.00</p></td>
+        <td><p>+ $500.00</p></td>
+      </tr>
+      <tr>
+        <td><p>T001</p></td>
+        <td><p>2025/01/25</p></td>
+        <td><p>U002</p></td>
+        <td><p>123456789</p></td>
+        <td><p>$100.00</p></td>
+        <td><p>+ $500.00</p></td>
+      </tr>
+    </table>
+  </div>
+  <div id="transactionsFooter" class="info">
+    <a href="./send.html" class="operacion recuadro">
+      <img src="#" alt="Tabla">
+      <p>Enviar Transacción</p>
+    </a>
+    <div id="navTransactions">
+      <p>Mostrando 25 registros de X</p>
+      <div>
+        <button id="prevBtn" class="recuadro"><img src="#" alt="Anterior"></button>
+        <button id="nextBtn" class="recuadro"><img src="#" alt="Siguiente"></button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

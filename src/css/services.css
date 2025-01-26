@@ -1,0 +1,294 @@
+body {
+    background-color: #afafaf;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    user-select: none;
+}
+
+hr {
+    border: 1px solid black;
+    background-color: black;
+    width: 85%;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    margin: 5px;
+}
+
+h4 {
+    text-align: center;
+    margin: 10px;
+}
+
+input {
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th {
+    border: 2px solid black;
+}
+
+th {
+    background-color: #555;
+    color: white;
+}
+
+td {
+    border: 1px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: 0;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(150, 150, 150);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(170, 170, 170);
+}
+
+tr:hover {
+    background-color: rgb(205, 206, 206);
+    cursor: default;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p, a {
+    font-size: 13px;
+    margin: 10px;
+}
+
+a:visited, a:link {
+    color: black;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.info {
+    width: 85%;
+    margin: auto;
+}
+
+.horizontalDisplay {
+    display: flex;
+    overflow-x: auto;
+}
+
+.horizontalDisplay div {
+    margin-right: 50px;
+}
+
+.recuadro {
+    background-color: rgb(220, 220, 220);
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: -1px 1px 2px rgb(70, 70, 70);
+}
+
+.cuenta {
+    width: 200px;
+}
+
+.cuenta p {
+    margin: 10px;
+}
+
+.operacion {
+    display: flex;
+    padding: 0 10px;
+    min-width: 125px;
+    height: 20px;
+}
+
+.operacion img {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.operacion p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+}
+
+#resumen {
+    width: 75%;
+    margin: 15px auto;
+    max-width: 400px;
+}
+
+#resumen h4 {
+    text-align: center;
+}
+
+/* Transactions Page */
+#searchBar {
+    width: 75%;
+    min-width: 475px;
+    max-width: 600px;
+    display: flex;
+    background-color: rgb(255, 200, 0);
+    justify-content: space-around;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: -1px 1px 2px rgb(70, 70, 70);
+}
+
+#searchInput {
+    padding: 0 5px;
+}
+
+#searchBar button {
+    width: 25px;
+    height: 25px;
+}
+
+#transactionsTable p {
+    margin: 0;
+    text-align: center;
+}
+
+#transactionsTable th {
+    font-size: 14px;
+    font-style: italic;
+}
+
+#transactionsFooter {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+#navTransactions {
+    background-color: rgb(255, 200, 0);
+    border-radius: 10px;
+    box-shadow: -1px 2px 5px rgb(70, 70, 70);
+}
+
+#navTransactions div {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+
+/* Send Transactions Page */
+#cuentaSend {
+    margin: 25px auto;
+}
+
+.actionP {
+    color: rgb(100, 150, 30);
+    margin: 0;
+}
+
+.sendColumns {
+    display: flex;
+    max-width: 700px;
+    min-width: 400px;
+    justify-content: space-around;
+    margin: 30px auto;
+    padding: 15px;
+    border: 1px solid gray;
+    background-color: #a1a1a1;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgb(70, 70, 70);
+}
+
+#sendData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sendData input {
+    margin: 15px 0;
+}
+
+#destinatarioData img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+#destinatarioData p {
+    text-align: center;
+}
+
+.actionBtn {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    margin: 15px auto;
+    background-color: rgb(100, 150, 30);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile Page */
+.centeredInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 450px;
+    text-align: center;
+}
+
+#profileImg img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+#updateInfoBtn {
+    margin: 0 15px;
+    align-self: flex-end;
+}
