@@ -1,5 +1,5 @@
 body {
-    background-color: #afafaf;
+    background-color: whitesmoke;
     font-family: Arial, sans-serif;
     margin: 0;
     user-select: none;
@@ -13,7 +13,7 @@ hr {
 
 h1 {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 h3 {
@@ -26,10 +26,11 @@ h4 {
 }
 
 input {
-    height: 25px;
+    height: 30px;
     border: 1px solid black;
     border-radius: 5px;
     margin: 0 2px;
+    padding: 0 10px;
 }
 
 table {
@@ -54,16 +55,20 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: rgb(150, 150, 150);
+    background-color: rgb(234, 233, 233);
 }
 
 tr:nth-child(odd) {
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(217, 217, 217);
 }
 
 tr:hover {
     background-color: rgb(205, 206, 206);
     cursor: default;
+}
+
+textarea {
+    resize: none;
 }
 
 ul {
@@ -93,12 +98,12 @@ a:visited, a:link {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: rgb(133, 123, 124);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: rgb(100, 100, 100);
 }
 
 .info {
@@ -116,10 +121,14 @@ a:visited, a:link {
 }
 
 .recuadro {
-    background-color: rgb(220, 220, 220);
-    border: 2px solid black;
-    border-radius: 7px;
-    box-shadow: -1px 1px 2px rgb(70, 70, 70);
+    background-color: rgb(235, 235, 235);
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgb(70, 70, 70);
+}
+
+.recuadro:hover {
+    background-color: rgb(181, 181, 181);
 }
 
 .cuenta {
@@ -138,7 +147,6 @@ a:visited, a:link {
 }
 
 .operacion img {
-    border: 1px solid black;
     width: 20px;
     height: 20px;
     margin-right: 5px;
@@ -168,7 +176,7 @@ a:visited, a:link {
     min-width: 475px;
     max-width: 600px;
     display: flex;
-    background-color: rgb(255, 200, 0);
+    background-color: rgb(220, 174, 122);
     justify-content: space-around;
     padding: 5px;
     margin: 10px auto;
@@ -180,9 +188,28 @@ a:visited, a:link {
     padding: 0 5px;
 }
 
-#searchBar button {
-    width: 25px;
-    height: 25px;
+#searchBtn {
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 0;
+    border-radius: 5px;
+}
+
+#searchBtn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#searchBar img {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+#transactionsTable {
+    min-width: 500px;
 }
 
 #transactionsTable p {
@@ -201,10 +228,47 @@ a:visited, a:link {
     margin: 10px auto;
 }
 
+@media screen and (max-width: 500px) {
+    #transactionsFooter {
+        flex-direction: column;
+    }
+
+    #transactionsFooter p {
+        text-align: center;
+    }
+
+    #transactionsFooter a {
+        width: 50%;
+        max-width: 150px;
+        margin: 10px auto;
+    }
+
+    #navTransactions {
+        margin: auto;
+        width: 75%;
+        max-width: 250px;
+    }
+}
+
 #navTransactions {
-    background-color: rgb(255, 200, 0);
+    background-color: rgb(220, 174, 122);
     border-radius: 10px;
     box-shadow: -1px 2px 5px rgb(70, 70, 70);
+}
+
+#navTransactions button {
+    background: none;
+    border: 0;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+#navTransactions button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#navTransactions img {
+    width: 20px;
 }
 
 #navTransactions div {
@@ -226,24 +290,36 @@ a:visited, a:link {
 .sendColumns {
     display: flex;
     max-width: 700px;
-    min-width: 400px;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 30px auto;
     padding: 15px;
     border: 1px solid gray;
-    background-color: #a1a1a1;
+    background-color: #c2c2c2;
     border-radius: 10px;
     box-shadow: 0 2px 3px rgb(70, 70, 70);
 }
 
 #sendData {
     display: flex;
+    width: 60%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #sendData input {
-    margin: 15px 0;
+    max-width: 225px;
+}
+
+#subjectSend {
+    width: 75%;
+    height: 20%;
+    max-width: 240px;
+    padding: 10px;
+}
+
+#destinatarioData {
+    margin: 0 25px;
 }
 
 #destinatarioData img {
@@ -256,12 +332,40 @@ a:visited, a:link {
     text-align: center;
 }
 
+@media screen and (max-width: 500px) {
+    .sendColumns {
+        flex-direction: column;
+        width: 200px;
+        height: 60vh;
+        justify-content: space-around;
+    }
+
+    #sendData {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 35%;
+    }
+
+    #subjectSend {
+        width: 90%;
+    }
+
+    #destinatarioData {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .actionBtn {
     display: flex;
     width: 100px;
     height: 30px;
     margin: 15px auto;
-    background-color: rgb(100, 150, 30);
+    background-color: rgb(247, 158, 56);
     color: white;
     border: none;
     border-radius: 5px;
@@ -280,6 +384,16 @@ a:visited, a:link {
     width: 200px;
     height: 450px;
     text-align: center;
+}
+
+#userInfo {
+    background-color: #c2c2c2;
+    border: 1px solid gray;
+    background-color: #c2c2c2;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgb(70, 70, 70);
+    width: 25%;
+    min-width: 250px;
 }
 
 #profileImg img {
