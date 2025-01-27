@@ -32,9 +32,26 @@
   </div>
   <div id="right">
     <div id="upsideMenu">
-        <h2>Titulo</h2>
+      <button id="hamburger">
+        <img src="../../assets/svg/hamburger-4-svgrepo-com.svg" alt="">
+      </button>
+      <h2>Titulo</h2>
     </div>
     <iframe src="./services/start.html" frameborder="0" name="screen"></iframe>
   </div>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerButton = document.getElementById('hamburger');
+    const lateralMenu = document.getElementById('lateralMenu');
+  
+    hamburgerButton.addEventListener('click', function() {
+      if (window.innerWidth <= 400) {
+        lateralMenu.classList.toggle('show');
+      } else {
+        lateralMenu.classList.toggle('hidden');
+      }
+    });
+  });
+</script>
 </html>
