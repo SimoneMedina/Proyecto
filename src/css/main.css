@@ -93,6 +93,10 @@ img {
     padding: 0 15px 0 5px;
 }
 
+#hamburger {
+    cursor: pointer;
+}
+
 #title {
     display: flex;
     width: 85%;
